@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/profile.jpg.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -159,7 +159,7 @@ function Index() {
               style={{ boxShadow: "var(--shadow-elegant)" }}
             >
               <img
-                src={profileImg}
+                src={profileAsset.url}
                 alt="Sami Mezrigui portrait"
                 width={768}
                 height={768}

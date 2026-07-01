@@ -97,6 +97,7 @@ const experiences = [
     period: "01/2020 – 02/2020",
     tags: "Production Machinery · Water Pumps · Preventive Maintenance",
     image: meublatexLogo.url,
+    bullets: [
       "Fabricated basic mechanical parts and contributed to trailer construction.",
       "Routine servicing and general maintenance on water pumps, milling machines and wood cutting equipment.",
     ],

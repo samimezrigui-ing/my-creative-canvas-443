@@ -4,6 +4,7 @@ import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
 import hmisLogo from "@/assets/hmis-logo.png.asset.json";
 import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
 import icarLogo from "@/assets/icar-logo.png.asset.json";
+import kiolexLogo from "@/assets/kiolex-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -45,7 +46,7 @@ const experiences = [
     company: "Kiolex — Akouda, Sousse, Tunisia (1 month)",
     period: "08/2024 – 09/2024",
     tags: "CNC Milling · CAD/CAM Integration · Programming · Quality Control",
-    image: kiolexImg,
+    image: kiolexLogo.url,
     bullets: [
       "Intensive practical training in CNC milling operations and cutting parameter adjustment.",
       "Integrated and fully processed 3D models from design to CAM using Mastercam and SolidWorks.",

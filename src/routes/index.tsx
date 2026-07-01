@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import profileAsset from "@/assets/profile.jpg.asset.json";
 import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
 import hmisLogo from "@/assets/hmis-logo.png.asset.json";
+import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -18,7 +19,7 @@ const experiences = [
     company: "Sonoclim — Sfax, Tunisia",
     period: "01/2026 – Present",
     tags: "Fluids Engineering · HVAC · Hydraulic & Aeraulic Sizing · Thermal Regulation",
-    image: sonoclimImg,
+    image: sonoclimLogo.url,
     bullets: [
       "Designed and modeled complex fluid networks (HVAC, plumbing, smoke extraction) using mechanical CAD.",
       "Performed comprehensive sizing and calculations for piping systems, air ducts, flow rates and pressure drops.",

@@ -5,6 +5,7 @@ import hmisLogo from "@/assets/hmis-logo.png.asset.json";
 import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
 import icarLogo from "@/assets/icar-logo.png.asset.json";
 import kiolexLogo from "@/assets/kiolex-logo.png.asset.json";
+import kelatecLogo from "@/assets/kelatec-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -34,7 +35,7 @@ const experiences = [
     company: "Kelatec Innovation — Akouda, Sousse, Tunisia (4 months)",
     period: "02/2025 – 06/2025",
     tags: "Industrial Automation · Mechanical CAD · Pneumatics · Project Management",
-    image: kelatecImg,
+    image: kelatecLogo.url,
     bullets: [
       "Led the technical design office for special machinery (generic hydraulic press, two-position hatch, pneumatic spreader).",
       "Conducted mechanical CAD modeling in SolidWorks for an automated profile cutting and sawing line with rack-and-pinion movement.",

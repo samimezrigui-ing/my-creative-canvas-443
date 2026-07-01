@@ -96,7 +96,7 @@ const experiences = [
     company: "Meublatex — Akouda, Sousse (1 month)",
     period: "01/2020 – 02/2020",
     tags: "Production Machinery · Water Pumps · Preventive Maintenance",
-    bullets: [
+    image: meublatexLogo.url,
       "Fabricated basic mechanical parts and contributed to trailer construction.",
       "Routine servicing and general maintenance on water pumps, milling machines and wood cutting equipment.",
     ],

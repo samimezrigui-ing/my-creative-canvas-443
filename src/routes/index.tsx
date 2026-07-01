@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import profileAsset from "@/assets/profile.jpg.asset.json";
 import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
+import hmisLogo from "@/assets/hmis-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -54,6 +55,7 @@ const experiences = [
     company: "HMIS — Akouda (1 month)",
     period: "07/2024 – 08/2024",
     tags: "Mechanical Manufacturing · Metallurgy · Machine Tools · Turning",
+    image: hmisLogo.url,
     bullets: [
       "Immersed in foundational mechanical production and metallurgical processes.",
       "Supervised hands-on operations on conventional machine tools (milling and turning).",

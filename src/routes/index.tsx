@@ -46,7 +46,7 @@ const experiences = [
     company: "Kiolex — Akouda, Sousse, Tunisia (1 month)",
     period: "08/2024 – 09/2024",
     tags: "CNC Milling · CAD/CAM Integration · Programming · Quality Control",
-    image: kiolexImg,
+    image: kiolexLogo.url,
     bullets: [
       "Intensive practical training in CNC milling operations and cutting parameter adjustment.",
       "Integrated and fully processed 3D models from design to CAM using Mastercam and SolidWorks.",

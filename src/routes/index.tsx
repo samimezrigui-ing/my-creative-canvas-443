@@ -19,7 +19,7 @@ const experiences = [
     company: "Sonoclim — Sfax, Tunisia",
     period: "01/2026 – Present",
     tags: "Fluids Engineering · HVAC · Hydraulic & Aeraulic Sizing · Thermal Regulation",
-    image: sonoclimImg,
+    image: sonoclimLogo.url,
     bullets: [
       "Designed and modeled complex fluid networks (HVAC, plumbing, smoke extraction) using mechanical CAD.",
       "Performed comprehensive sizing and calculations for piping systems, air ducts, flow rates and pressure drops.",

@@ -6,6 +6,7 @@ import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
 import icarLogo from "@/assets/icar-logo.png.asset.json";
 import kiolexLogo from "@/assets/kiolex-logo.png.asset.json";
 import kelatecLogo from "@/assets/kelatec-logo.png.asset.json";
+import meublatexLogo from "@/assets/meublatex-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -95,6 +96,7 @@ const experiences = [
     company: "Meublatex — Akouda, Sousse (1 month)",
     period: "01/2020 – 02/2020",
     tags: "Production Machinery · Water Pumps · Preventive Maintenance",
+    image: meublatexLogo.url,
     bullets: [
       "Fabricated basic mechanical parts and contributed to trailer construction.",
       "Routine servicing and general maintenance on water pumps, milling machines and wood cutting equipment.",

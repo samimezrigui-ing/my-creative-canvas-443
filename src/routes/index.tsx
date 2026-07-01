@@ -1,10 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import profileAsset from "@/assets/profile.jpg.asset.json";
+import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
 import liftingImg from "@/assets/proj-lifting.jpg";
-import { Mail, Linkedin, Download, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -76,6 +77,7 @@ const experiences = [
     company: "SCCMBF — Hammam Sousse (1 month)",
     period: "01/2021 – 02/2021",
     tags: "Mechanical Maintenance · Laser Cutting · Machining · Boilermaking",
+    image: sccmbfLogo.url,
     bullets: [
       "Technical diagnostics and corrective maintenance on lathes, milling machines, laser and wood cutters.",
       "Manufactured custom mechanical components (transmission shafts, mechanical supports).",

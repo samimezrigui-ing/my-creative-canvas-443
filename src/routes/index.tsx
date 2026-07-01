@@ -3,6 +3,7 @@ import profileAsset from "@/assets/profile.jpg.asset.json";
 import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
 import hmisLogo from "@/assets/hmis-logo.png.asset.json";
 import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
+import icarLogo from "@/assets/icar-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
@@ -68,7 +69,7 @@ const experiences = [
     company: "ICAR — Sousse (3 months)",
     period: "02/2022 – 05/2022",
     tags: "CAD Modeling · Material Selection · Mechanics of Materials · Project Management",
-    image: liftingImg,
+    image: icarLogo.url,
     bullets: [
       "Completed full study and mechanical design of a lifting table for vehicle engines.",
       "Conducted functional requirements analysis, sizing calculations and material selection.",

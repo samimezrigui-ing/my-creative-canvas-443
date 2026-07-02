@@ -81,9 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Portfolio of Sami Mezrigui, Electromechanical Engineer specialized in HVAC, fluids, industrial automation and mechanical CAD." },
       { name: "author", content: "Sami Mezrigui" },
       { property: "og:title", content: "Sami Mezrigui — Electromechanical Engineer" },
-      { property: "og:description", content: "Portfolio — HVAC, fluids engineering, industrial automation and mechanical CAD." },
+      { property: "og:description", content: "Portfolio of Sami Mezrigui, Electromechanical Engineer specialized in HVAC, fluids, industrial automation and mechanical CAD." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sami Mezrigui — Electromechanical Engineer" },
+      { name: "twitter:description", content: "Portfolio of Sami Mezrigui, Electromechanical Engineer specialized in HVAC, fluids, industrial automation and mechanical CAD." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1dd5b164-ff89-45fe-b780-38f63d874c09" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1dd5b164-ff89-45fe-b780-38f63d874c09" },
     ],
     links: [
       {

@@ -10,7 +10,7 @@ import meublatexLogo from "@/assets/meublatex-logo.png.asset.json";
 import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
-import liftingImg from "@/assets/proj-lifting.jpg";
+import liftingTableAsset from "@/assets/lifting-table.png.asset.json";
 import kelatecVideo from "@/assets/kelatec-line-3d.mp4.asset.json";
 import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
 
@@ -249,7 +249,7 @@ function Index() {
           <h2 className="text-3xl font-bold tracking-tight mb-8">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <ProjectCard
-              image={liftingImg}
+              image={liftingTableAsset.url}
               title="Lifting Table for Vehicle Engines"
               tags={["SolidWorks", "CAD", "Mechanics of Materials"]}
               description="Full mechanical study and design of a lifting table — sizing calculations, material selection, 3D CAD modeling and validation testing."

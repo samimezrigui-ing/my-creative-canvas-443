@@ -11,6 +11,7 @@ import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import kiolexImg from "@/assets/exp-kiolex.jpg";
 import liftingImg from "@/assets/proj-lifting.jpg";
+import kelatecVideo from "@/assets/kelatec-line-3d.mp4.asset.json";
 import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -255,6 +256,7 @@ function Index() {
             />
             <ProjectCard
               image={kelatecImg}
+              video={kelatecVideo.url}
               title="Hydraulic Press & Automated Cutting Line"
               tags={["SolidWorks", "Pneumatics", "Servomotors"]}
               description="Special machinery design including a generic hydraulic press and an automated profile cutting line with rack-and-pinion motion and programmed control logic."
@@ -329,11 +331,13 @@ function Index() {
 
 function ProjectCard({
   image,
+  video,
   title,
   description,
   tags,
 }: {
   image: string;
+  video?: string;
   title: string;
   description: string;
   tags: string[];
@@ -344,14 +348,26 @@ function ProjectCard({
       style={{ boxShadow: "var(--shadow-card)" }}
     >
       <div className="aspect-[4/3] overflow-hidden bg-muted">
-        <img
-          src={image}
-          alt={title}
-          loading="lazy"
-          width={1024}
-          height={768}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-        />
+        {video ? (
+          <video
+            src={video}
+            poster={image}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            width={1024}
+            height={768}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-lg font-semibold" style={{ color: "var(--primary)" }}>

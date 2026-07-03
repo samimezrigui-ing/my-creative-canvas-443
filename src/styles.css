@@ -85,6 +85,7 @@
   --input: oklch(0.88 0.03 75);
   --ring: oklch(0.68 0.09 70);
   --gradient-hero: linear-gradient(135deg, oklch(0.72 0.09 72), oklch(0.62 0.08 65));
+  --hero-foreground: oklch(0.99 0.01 80);
   --shadow-elegant: 0 20px 50px -20px oklch(0.45 0.08 65 / 0.35);
   --shadow-card: 0 8px 24px -12px oklch(0.45 0.08 65 / 0.25);
   --chart-1: oklch(0.646 0.222 41.116);

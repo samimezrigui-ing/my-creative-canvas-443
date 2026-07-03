@@ -120,8 +120,10 @@ const skills = [
 ];
 
 function Index() {
+  const { theme, toggle, mounted } = useTheme();
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       {/* Hero */}
       <header
         className="relative overflow-hidden"
@@ -135,7 +137,7 @@ function Index() {
         />
         <div className="relative mx-auto max-w-5xl px-6 py-20 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Sami Mezrigui
+            Sami MEZRIGUI
           </h1>
           <p className="mt-4 text-lg md:text-xl opacity-90">
             Electromechanical Engineer
@@ -148,19 +150,24 @@ function Index() {
             <a href="#contact" className="hover:opacity-75 transition">Contact</a>
           </nav>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-foreground/90 px-5 py-2.5 text-sm font-medium text-background transition hover:bg-foreground"
+            <button
+              onClick={toggle}
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/20 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
+              aria-label="Toggle dark mode"
             >
-              <Mail className="h-4 w-4" /> Get in touch
-            </a>
+              {mounted && theme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+              {mounted && theme === "dark" ? "Light Mode" : "Dark Mode"}
+            </button>
             <a
-              href="https://www.linkedin.com/in/sami-mezrigui-747427304"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/20"
+              href={cvAsset.url}
+              download="Sami-Mezrigui-CV.pdf"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/80 px-5 py-2.5 text-sm font-medium text-[oklch(0.25_0.03_60)] transition hover:bg-primary-foreground"
             >
-              <Linkedin className="h-4 w-4" /> LinkedIn
+              <FileDown className="h-4 w-4" /> Download CV
             </a>
           </div>
         </div>

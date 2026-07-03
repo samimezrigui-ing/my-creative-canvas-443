@@ -165,7 +165,7 @@ function Index() {
             <a
               href={cvAsset.url}
               download="Sami-Mezrigui-CV.pdf"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/80 px-5 py-2.5 text-sm font-medium text-[oklch(0.25_0.03_60)] transition hover:bg-primary-foreground"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/80 px-5 py-2.5 text-sm font-medium text-foreground transition hover:bg-primary-foreground"
             >
               <FileDown className="h-4 w-4" /> Download CV
             </a>

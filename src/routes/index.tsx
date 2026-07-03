@@ -16,7 +16,7 @@ import trappeVideo from "@/assets/trappe-pneumatique.mp4.asset.json";
 import trappePoster from "@/assets/trappe-pneumatique-poster.jpg.asset.json";
 import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
 import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
-import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, Phone, ArrowUpRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -325,6 +325,12 @@ function Index() {
                 className="inline-flex items-center gap-2 rounded-full bg-foreground/90 px-5 py-2.5 text-sm font-medium text-background transition hover:bg-foreground"
               >
                 <Mail className="h-4 w-4" /> sami.mezrigui@polytechnicien.tn
+              </a>
+              <a
+                href="tel:+21695052148"
+                className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/20"
+              >
+                <Phone className="h-4 w-4" /> +216 95 052 148
               </a>
               <a
                 href="https://www.linkedin.com/in/sami-mezrigui-747427304"

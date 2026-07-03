@@ -135,7 +135,7 @@ function Index() {
               "radial-gradient(circle at 20% 30%, oklch(1 0 0 / 0.15), transparent 40%), radial-gradient(circle at 80% 70%, oklch(1 0 0 / 0.1), transparent 40%)",
           }}
         />
-        <div className="relative mx-auto max-w-5xl px-6 py-20 text-center text-primary-foreground">
+        <div className="relative mx-auto max-w-5xl px-6 py-20 text-center" style={{ color: "var(--hero-foreground)" }}>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Sami MEZRIGUI
           </h1>
@@ -152,7 +152,7 @@ function Index() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <button
               onClick={toggle}
-              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/20 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
               aria-label="Toggle dark mode"
             >
               {mounted && theme === "dark" ? (

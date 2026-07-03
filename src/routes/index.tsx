@@ -16,7 +16,9 @@ import trappeVideo from "@/assets/trappe-pneumatique.mp4.asset.json";
 import trappePoster from "@/assets/trappe-pneumatique-poster.jpg.asset.json";
 import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
 import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
-import { Mail, Linkedin, Phone, ArrowUpRight } from "lucide-react";
+import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
+import { useTheme } from "@/hooks/useTheme";
+import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,

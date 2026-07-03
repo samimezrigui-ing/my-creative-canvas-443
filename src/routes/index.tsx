@@ -14,6 +14,8 @@ import liftingTableAsset from "@/assets/lifting-table.png.asset.json";
 import kelatecVideo from "@/assets/kelatec-line-3d.mp4.asset.json";
 import trappeVideo from "@/assets/trappe-pneumatique.mp4.asset.json";
 import trappePoster from "@/assets/trappe-pneumatique-poster.jpg.asset.json";
+import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
+import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
 import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -269,6 +271,13 @@ function Index() {
               title="Two-Position Hatch — Pneumatic Control"
               tags={["SolidWorks", "Pneumatics", "Mechanical Design"]}
               description="Design and 3D modeling of a two-position hatch actuated by pneumatic control — kinematic study, cylinder sizing and motion simulation of the opening/closing sequence."
+            />
+            <ProjectCard
+              image={ecarteurPoster.url}
+              video={ecarteurVideo.url}
+              title="Compact Pneumatic Spreader Module"
+              tags={["SolidWorks", "Pneumatics", "HMI", "Safety"]}
+              description="Design, sizing and fabrication of a compact, adjustable and safe pneumatic spreader module for a special industrial machine — full 3D assembly and kinematic simulation in SolidWorks, control cabinet with LCD HMI, push-buttons and rotary potentiometer, double-acting cylinder with FRL air treatment and solenoid valves, plus emergency-stop safety loops. Validated as a functional prototype with high precision and repeatability."
             />
             <ProjectCard
               image={sonoclimImg}

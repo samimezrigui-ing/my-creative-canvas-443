@@ -16,6 +16,8 @@ import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
 import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
 import presseVideo from "@/assets/presse-pneumatique.mp4.asset.json";
 import pressePoster from "@/assets/presse-pneumatique-poster.jpg.asset.json";
+import petSolidworks from "@/assets/pet-solidworks.jpg.asset.json";
+import petKinematic from "@/assets/pet-kinematic.jpg.asset.json";
 import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";

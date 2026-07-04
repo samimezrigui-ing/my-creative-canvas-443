@@ -299,15 +299,10 @@ function Index() {
             />
             <ProjectCard
               image={petSolidworks.url}
+              secondaryImage={petKinematic.url}
               title="PET Recycling & 3D Filament Extrusion Machine"
-              tags={["SolidWorks", "Arduino", "C/C++", "Stepper Motor", "Thermal Control", "Eco-design"]}
-              description="Eco-designed functional prototype that transforms discarded PET bottles into high-quality 3D-printing filament. Full SolidWorks mechanical design and kinematic study of the strip-feed, heated extrusion nozzle and stepper-driven spooling system, combined with an Arduino Uno + CNC Shield architecture. Custom C/C++ firmware ensures high-precision thermal regulation of the heating block and smooth stepper control for a constant winding speed and regular filament diameter."
-            />
-            <ProjectCard
-              image={petKinematic.url}
-              title="PET Extrusion — Kinematic & Process Diagram"
-              tags={["Kinematic Study", "Process Design", "Thermal Regulation", "Sensors"]}
-              description="Complete kinematic and process diagram of the PET-to-filament machine: bottle-to-strip cutting, controlled feed into the heated extrusion block with thermistor feedback (230–260 °C), calibrated 1.75 mm nozzle, and NEMA 17 stepper-driven winding spool synchronized to guarantee a regular filament diameter."
+              tags={["SolidWorks", "Arduino", "C/C++", "Kinematic Study", "Thermal Control", "Eco-design"]}
+              description="Eco-designed functional prototype that transforms discarded PET bottles into high-quality 3D-printing filament. Full SolidWorks mechanical design and kinematic study of the strip-feed, heated extrusion nozzle (230–260 °C) and NEMA 17 stepper-driven spooling system, with process diagram showing bottle-to-strip cutting, controlled feed and synchronized winding. Arduino Uno + CNC Shield architecture with custom C/C++ firmware ensures high-precision thermal regulation and smooth stepper control for a constant winding speed and regular filament diameter."
             />
           </div>
         </section>
@@ -373,12 +368,14 @@ function Index() {
 
 function ProjectCard({
   image,
+  secondaryImage,
   video,
   title,
   description,
   tags,
 }: {
   image: string;
+  secondaryImage?: string;
   video?: string;
   title: string;
   description: string;
@@ -400,6 +397,25 @@ function ProjectCard({
             playsInline
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           />
+        ) : secondaryImage ? (
+          <div className="grid grid-cols-2 h-full w-full">
+            <img
+              src={image}
+              alt={`${title} — SolidWorks design`}
+              loading="lazy"
+              width={1024}
+              height={768}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+            <img
+              src={secondaryImage}
+              alt={`${title} — kinematic and process diagram`}
+              loading="lazy"
+              width={1024}
+              height={768}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
         ) : (
           <img
             src={image}

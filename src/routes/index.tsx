@@ -297,6 +297,18 @@ function Index() {
               tags={["SolidWorks", "Pneumatics", "HMI", "Linear Guides", "FRL"]}
               description="Design, sizing and fabrication of a compact precision pressing machine with a manual sliding tray for secure loading, twin-pillar press-head guidance, linear-rail tray guidance, integrated HMI and side-mounted FRL unit — validated as a functional prototype on the shop floor."
             />
+            <ProjectCard
+              image={petSolidworks.url}
+              title="PET Recycling & 3D Filament Extrusion Machine"
+              tags={["SolidWorks", "Arduino", "C/C++", "Stepper Motor", "Thermal Control", "Eco-design"]}
+              description="Eco-designed functional prototype that transforms discarded PET bottles into high-quality 3D-printing filament. Full SolidWorks mechanical design and kinematic study of the strip-feed, heated extrusion nozzle and stepper-driven spooling system, combined with an Arduino Uno + CNC Shield architecture. Custom C/C++ firmware ensures high-precision thermal regulation of the heating block and smooth stepper control for a constant winding speed and regular filament diameter."
+            />
+            <ProjectCard
+              image={petKinematic.url}
+              title="PET Extrusion — Kinematic & Process Diagram"
+              tags={["Kinematic Study", "Process Design", "Thermal Regulation", "Sensors"]}
+              description="Complete kinematic and process diagram of the PET-to-filament machine: bottle-to-strip cutting, controlled feed into the heated extrusion block with thermistor feedback (230–260 °C), calibrated 1.75 mm nozzle, and NEMA 17 stepper-driven winding spool synchronized to guarantee a regular filament diameter."
+            />
           </div>
         </section>
 

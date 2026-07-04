@@ -368,12 +368,14 @@ function Index() {
 
 function ProjectCard({
   image,
+  secondaryImage,
   video,
   title,
   description,
   tags,
 }: {
   image: string;
+  secondaryImage?: string;
   video?: string;
   title: string;
   description: string;
@@ -395,6 +397,25 @@ function ProjectCard({
             playsInline
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           />
+        ) : secondaryImage ? (
+          <div className="grid grid-cols-2 h-full w-full">
+            <img
+              src={image}
+              alt={`${title} — SolidWorks design`}
+              loading="lazy"
+              width={1024}
+              height={768}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+            <img
+              src={secondaryImage}
+              alt={`${title} — kinematic and process diagram`}
+              loading="lazy"
+              width={1024}
+              height={768}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
         ) : (
           <img
             src={image}

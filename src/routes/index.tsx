@@ -7,15 +7,15 @@ import icarLogo from "@/assets/icar-logo.png.asset.json";
 import kiolexLogo from "@/assets/kiolex-logo.png.asset.json";
 import kelatecLogo from "@/assets/kelatec-logo.png.asset.json";
 import meublatexLogo from "@/assets/meublatex-logo.png.asset.json";
-import sonoclimImg from "@/assets/exp-sonoclim.jpg";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
-import kiolexImg from "@/assets/exp-kiolex.jpg";
 import liftingTableAsset from "@/assets/lifting-table.png.asset.json";
 import kelatecVideo from "@/assets/kelatec-line-3d.mp4.asset.json";
 import trappeVideo from "@/assets/trappe-pneumatique.mp4.asset.json";
 import trappePoster from "@/assets/trappe-pneumatique-poster.jpg.asset.json";
 import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
 import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
+import presseVideo from "@/assets/presse-pneumatique.mp4.asset.json";
+import pressePoster from "@/assets/presse-pneumatique-poster.jpg.asset.json";
 import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";
@@ -289,16 +289,11 @@ function Index() {
               description="Design, sizing and fabrication of a compact, adjustable and safe pneumatic spreader module for a special industrial machine — full 3D assembly and kinematic simulation in SolidWorks, control cabinet with LCD HMI, push-buttons and rotary potentiometer, double-acting cylinder with FRL air treatment and solenoid valves, plus emergency-stop safety loops. Validated as a functional prototype with high precision and repeatability."
             />
             <ProjectCard
-              image={sonoclimImg}
-              title="HVAC & Fluids Networks Design"
-              tags={["HVAC", "Piping", "BMS/BAMS"]}
-              description="Modeling and sizing of complex fluid networks — HVAC ducts, plumbing and smoke extraction — with integrated thermal regulation and control panels."
-            />
-            <ProjectCard
-              image={kiolexImg}
-              title="CNC Milling — CAD to CAM Workflow"
-              tags={["Mastercam", "SolidWorks", "CNC"]}
-              description="End-to-end integration of 3D models from design to CAM, with cutting parameter optimization and rigorous quality control on finished parts."
+              image={pressePoster.url}
+              video={presseVideo.url}
+              title="Precision Pressing Machine with Sliding Tray"
+              tags={["SolidWorks", "Pneumatics", "HMI", "Linear Guides", "FRL"]}
+              description="Design, sizing and fabrication of a compact precision pressing machine with a manual sliding tray for secure loading, twin-pillar press-head guidance, linear-rail tray guidance, integrated HMI and side-mounted FRL unit — validated as a functional prototype on the shop floor."
             />
           </div>
         </section>

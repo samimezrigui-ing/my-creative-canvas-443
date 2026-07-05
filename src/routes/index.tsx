@@ -371,12 +371,18 @@ function Index() {
                 className="inline-flex items-center gap-2 rounded-full bg-foreground/90 px-5 py-2.5 text-sm font-medium text-background transition hover:bg-foreground"
               >
                 <Mail className="h-4 w-4" /> sami.mezrigui@polytechnicien.tn
+                <svg className="ml-1 h-3 w-3 text-background/70" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l2.6 6.9L22 10l-5.5 4.3L18.2 22 12 17.8 5.8 22l1.7-7.7L2 10l7.4-1.1L12 2z" />
+                </svg>
               </a>
               <a
                 href="tel:+21695052148"
                 className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/20"
               >
                 <Phone className="h-4 w-4" /> +216 95 052 148
+                <svg className="ml-1 h-3 w-3 text-primary-foreground/70" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l2.6 6.9L22 10l-5.5 4.3L18.2 22 12 17.8 5.8 22l1.7-7.7L2 10l7.4-1.1L12 2z" />
+                </svg>
               </a>
               <a
                 href="https://www.linkedin.com/in/sami-mezrigui-747427304"
@@ -386,6 +392,9 @@ function Index() {
               >
                 <Linkedin className="h-4 w-4" /> Sami Mezrigui
                 <ArrowUpRight className="h-4 w-4" />
+                <svg className="ml-1 h-3 w-3 text-primary-foreground/70" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l2.6 6.9L22 10l-5.5 4.3L18.2 22 12 17.8 5.8 22l1.7-7.7L2 10l7.4-1.1L12 2z" />
+                </svg>
               </a>
             </div>
           </div>

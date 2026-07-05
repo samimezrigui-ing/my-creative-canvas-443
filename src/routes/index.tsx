@@ -335,13 +335,37 @@ function Index() {
         <section id="contact" className="scroll-mt-20">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Contact</h2>
           <div
-            className="rounded-2xl p-8 md:p-10 text-primary-foreground"
+            className="relative overflow-hidden rounded-2xl p-8 md:p-10 text-primary-foreground"
             style={{ background: "var(--gradient-hero)", boxShadow: "var(--shadow-elegant)" }}
           >
+            {/* Decorative stars */}
+            <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+              {[
+                { top: "8%", left: "6%", size: 10, delay: "0s" },
+                { top: "18%", left: "88%", size: 14, delay: "0.4s" },
+                { top: "35%", left: "42%", size: 8, delay: "0.8s" },
+                { top: "62%", left: "12%", size: 12, delay: "1.2s" },
+                { top: "78%", left: "70%", size: 10, delay: "0.6s" },
+                { top: "48%", left: "92%", size: 8, delay: "1.6s" },
+                { top: "88%", left: "30%", size: 14, delay: "0.2s" },
+                { top: "12%", left: "55%", size: 8, delay: "1.4s" },
+              ].map((s, i) => (
+                <svg
+                  key={i}
+                  className="absolute animate-pulse text-primary-foreground/70"
+                  style={{ top: s.top, left: s.left, width: s.size, height: s.size, animationDelay: s.delay }}
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 2l2.6 6.9L22 10l-5.5 4.3L18.2 22 12 17.8 5.8 22l1.7-7.7L2 10l7.4-1.1L12 2z" />
+                </svg>
+              ))}
+            </div>
+
             <p className="text-lg md:text-xl">
               Let's discuss your next engineering project.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="relative mt-6 flex flex-col gap-3 items-start">
               <a
                 href="mailto:sami.mezrigui@polytechnicien.tn"
                 className="inline-flex items-center gap-2 rounded-full bg-foreground/90 px-5 py-2.5 text-sm font-medium text-background transition hover:bg-foreground"
@@ -360,7 +384,7 @@ function Index() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-5 py-2.5 text-sm font-medium backdrop-blur transition hover:bg-primary-foreground/20"
               >
-                <Linkedin className="h-4 w-4" /> linkedin.com/in/sami-mezrigui
+                <Linkedin className="h-4 w-4" /> Sami Mezrigui
                 <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>

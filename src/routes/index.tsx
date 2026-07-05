@@ -18,6 +18,8 @@ import presseVideo from "@/assets/presse-pneumatique.mp4.asset.json";
 import pressePoster from "@/assets/presse-pneumatique-poster.jpg.asset.json";
 import petProject from "@/assets/pet-project.jpg.asset.json";
 import pet3dPrint from "@/assets/pet-3dprint.jpg.asset.json";
+import posageAssembly from "@/assets/posage-assembly.png.asset.json";
+import posageKinematic from "@/assets/posage-kinematic.mp4.asset.json";
 import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";
@@ -296,6 +298,13 @@ function Index() {
               title="Precision Pressing Machine with Sliding Tray"
               tags={["SolidWorks", "Pneumatics", "HMI", "Linear Guides", "FRL"]}
               description="Design, sizing and fabrication of a compact precision pressing machine with a manual sliding tray for secure loading, twin-pillar press-head guidance, linear-rail tray guidance, integrated HMI and side-mounted FRL unit — validated as a functional prototype on the shop floor."
+            />
+            <ProjectCard
+              image={posageAssembly.url}
+              video={posageKinematic.url}
+              title="Custom PCB Fixture (Posage) for Generic Press"
+              tags={["SolidWorks", "Polymer Machining", "Precision Tooling", "PCB Assembly", "Kelatec Innovation"]}
+              description="Developed in collaboration with Kelatec Innovation — design of a custom fixture (posage) for an electronic PCB, integrated into a generic press. The main challenge was tight dimensional constraints: the yellow polymer matrix perfectly matches the complex and irregular geometry of the board's components (variable heights, connectors, coils) while ensuring rigid retention, ultra-precise alignment under the press and optimal protection of the PCB against mechanical stress during assembly."
             />
             <ProjectCard
               image={petProject.url}

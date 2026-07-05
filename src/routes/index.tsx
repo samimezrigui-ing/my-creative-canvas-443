@@ -16,8 +16,8 @@ import ecarteurVideo from "@/assets/ecarteur-pneumatique.mp4.asset.json";
 import ecarteurPoster from "@/assets/ecarteur-pneumatique-poster.jpg.asset.json";
 import presseVideo from "@/assets/presse-pneumatique.mp4.asset.json";
 import pressePoster from "@/assets/presse-pneumatique-poster.jpg.asset.json";
-import petSolidworks from "@/assets/pet-solidworks.jpg.asset.json";
-import petKinematic from "@/assets/pet-kinematic.jpg.asset.json";
+import petProject from "@/assets/pet-project.jpg.asset.json";
+import pet3dPrint from "@/assets/pet-3dprint.jpg.asset.json";
 import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";
@@ -298,11 +298,11 @@ function Index() {
               description="Design, sizing and fabrication of a compact precision pressing machine with a manual sliding tray for secure loading, twin-pillar press-head guidance, linear-rail tray guidance, integrated HMI and side-mounted FRL unit — validated as a functional prototype on the shop floor."
             />
             <ProjectCard
-              image={petSolidworks.url}
-              secondaryImage={petKinematic.url}
+              image={petProject.url}
+              secondaryImage={pet3dPrint.url}
               title="PET Recycling & 3D Filament Extrusion Machine"
-              tags={["SolidWorks", "Arduino", "C/C++", "Kinematic Study", "Thermal Control", "Eco-design"]}
-              description="Eco-designed functional prototype that transforms discarded PET bottles into high-quality 3D-printing filament. Full SolidWorks mechanical design and kinematic study of the strip-feed, heated extrusion nozzle (230–260 °C) and NEMA 17 stepper-driven spooling system, with process diagram showing bottle-to-strip cutting, controlled feed and synchronized winding. Arduino Uno + CNC Shield architecture with custom C/C++ firmware ensures high-precision thermal regulation and smooth stepper control for a constant winding speed and regular filament diameter."
+              tags={["3D Printing", "Arduino", "C/C++", "PET Recycling", "Thermal Control", "Eco-design"]}
+              description="Eco-designed functional prototype that transforms discarded PET plastic bottles into high-quality filament for 3D printing — tackling plastic waste while producing an affordable feedstock for additive manufacturing. The mechanical structure was fully 3D-printed (drum, gears, brackets, extruder housing) and assembled on a wooden base with a NEMA 17 stepper (17HS4401) driving the winding spool, a V6 J-head aluminium heat block with a 24 V 40 W Reprap cartridge, a PT100 temperature probe and a DC 12 V cooling fan. An Arduino Uno paired with a CNC Shield V3 and custom C/C++ firmware handles high-precision thermal regulation of the heating block, smooth stepper control for a constant winding speed and a regular filament diameter, with a 1602 I²C LCD displaying the live extrusion temperature."
             />
           </div>
         </section>

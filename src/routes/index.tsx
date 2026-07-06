@@ -139,6 +139,14 @@ function Index() {
               "radial-gradient(circle at 20% 30%, oklch(1 0 0 / 0.15), transparent 40%), radial-gradient(circle at 80% 70%, oklch(1 0 0 / 0.1), transparent 40%)",
           }}
         />
+        <div className="absolute top-4 right-4 z-10">
+          <Link
+            to="/fr"
+            className="inline-flex items-center justify-center rounded-full bg-primary-foreground/20 px-4 py-2 text-sm font-medium text-foreground backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
+          >
+            FR
+          </Link>
+        </div>
         <div className="relative mx-auto max-w-5xl px-6 py-20 text-center" style={{ color: "var(--hero-foreground)" }}>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Sami MEZRIGUI

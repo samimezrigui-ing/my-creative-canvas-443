@@ -24,106 +24,106 @@ import cvAsset from "@/assets/sami-mezrigui-cv.pdf.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 import { Mail, Linkedin, Phone, ArrowUpRight, Moon, Sun, FileDown } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  component: Index,
+export const Route = createFileRoute("/fr")({
+  component: FrPage,
 });
 
 const experiences = [
   {
-    title: "Fluids Engineer",
-    company: "Sonoclim — Sfax, Tunisia",
-    period: "01/2026 – Present",
-    tags: "Fluids Engineering · HVAC · Hydraulic & Aeraulic Sizing · Thermal Regulation",
+    title: "Ingénieur en Fluides",
+    company: "Sonoclim — Sfax, Tunisie",
+    period: "01/2026 – Présent",
+    tags: "Ingénierie des Fluides · CVC · Dimensionnement Hydraulique & Aéraulique · Régulation Thermique",
     image: sonoclimLogo.url,
     bullets: [
-      "Designed and modeled complex fluid networks (HVAC, plumbing, smoke extraction) using mechanical CAD.",
-      "Performed comprehensive sizing and calculations for piping systems, air ducts, flow rates and pressure drops.",
-      "Integrated industrial automation systems, thermal regulation (BMS/BAMS) and control panels.",
-      "Provided on-site technical supervision, coordinated teams and ensured installation compliance.",
+      "Conception et modélisation de réseaux de fluides complexes (CVC, plomberie, extraction de fumée) à l'aide de CAO mécanique.",
+      "Réalisation de dimensionnements et calculs complets pour les systèmes de tuyauterie, conduits d'air, débits et pertes de charge.",
+      "Intégration de systèmes d'automatisation industrielle, de régulation thermique (BMS/BAMS) et de tableaux de commande.",
+      "Supervision technique sur site, coordination des équipes et assurance de la conformité des installations.",
     ],
   },
   {
-    title: "Master's Graduation Project & R&D Office Manager",
-    company: "Kelatec Innovation — Akouda, Sousse, Tunisia (4 months)",
+    title: "Projet de Fin d'Études Master & Responsable du Bureau d'Études R&D",
+    company: "Kelatec Innovation — Akouda, Sousse, Tunisie (4 mois)",
     period: "02/2025 – 06/2025",
-    tags: "Industrial Automation · Mechanical CAD · Pneumatics · Project Management",
+    tags: "Automatisation Industrielle · CAO Mécanique · Pneumatique · Gestion de Projet",
     image: kelatecLogo.url,
     bullets: [
-      "Led the technical design office for special machinery (generic hydraulic press, two-position hatch, pneumatic spreader).",
-      "Conducted mechanical CAD modeling in SolidWorks for an automated profile cutting and sawing line with rack-and-pinion movement.",
-      "Studied and integrated power circuits, pneumatic clamping, a punching station, and programmed control logic using servomotors.",
+      "Direction du bureau d'études technique pour les machines spéciales (presse hydraulique générique, trappe à deux positions, écarteur pneumatique).",
+      "Réalisation de modélisation CAO mécanique dans SolidWorks pour une ligne de découpe et sciage de profilés automatisée à mouvement par crémaillère.",
+      "Étude et intégration des circuits de puissance, du serrage pneumatique, d'une station de poinçonnage et programmation de la logique de commande à l'aide de servomoteurs.",
     ],
   },
   {
-    title: "Technician Internship",
-    company: "Kiolex — Akouda, Sousse, Tunisia (1 month)",
+    title: "Stage Technicien",
+    company: "Kiolex — Akouda, Sousse, Tunisie (1 mois)",
     period: "08/2024 – 09/2024",
-    tags: "CNC Milling · CAD/CAM Integration · Programming · Quality Control",
+    tags: "Fraisage CNC · Intégration CAO/FAO · Programmation · Contrôle Qualité",
     image: kiolexLogo.url,
     bullets: [
-      "Intensive practical training in CNC milling operations and cutting parameter adjustment.",
-      "Integrated and fully processed 3D models from design to CAM using Mastercam and SolidWorks.",
-      "Optimized machining processes to reduce cycle times and maintained rigorous quality control.",
+      "Formation pratique intensive en opérations de fraisage CNC et réglage des paramètres de coupe.",
+      "Intégration et traitement complet de modèles 3D de la conception à la FAO à l'aide de Mastercam et SolidWorks.",
+      "Optimisation des processus d'usinage pour réduire les temps de cycle et maintien d'un contrôle qualité rigoureux.",
     ],
   },
   {
-    title: "Worker Internship",
-    company: "HMIS — Akouda (1 month)",
+    title: "Stage Ouvrier",
+    company: "HMIS — Akouda (1 mois)",
     period: "07/2024 – 08/2024",
-    tags: "Mechanical Manufacturing · Metallurgy · Machine Tools · Turning",
+    tags: "Fabrication Mécanique · Métallurgie · Machines-Outils · Tournage",
     image: hmisLogo.url,
     bullets: [
-      "Immersed in foundational mechanical production and metallurgical processes.",
-      "Supervised hands-on operations on conventional machine tools (milling and turning).",
-      "Applied quality control techniques within an industrial environment.",
+      "Immersion dans les processus fondamentaux de production mécanique et métallurgique.",
+      "Supervision des opérations pratiques sur des machines-outils conventionnelles (fraisage et tournage).",
+      "Application des techniques de contrôle qualité dans un environnement industriel.",
     ],
   },
   {
-    title: "Bachelor's Graduation Project",
-    company: "ICAR — Sousse (3 months)",
+    title: "Projet de Fin d'Études Licence",
+    company: "ICAR — Sousse (3 mois)",
     period: "02/2022 – 05/2022",
-    tags: "CAD Modeling · Material Selection · Mechanics of Materials · Project Management",
+    tags: "Modélisation CAO · Sélection des Matériaux · Résistance des Matériaux · Gestion de Projet",
     image: icarLogo.url,
     bullets: [
-      "Completed full study and mechanical design of a lifting table for vehicle engines.",
-      "Conducted functional requirements analysis, sizing calculations and material selection.",
-      "Managed 3D CAD modeling, manufacturing supervision and performance validation testing.",
+      "Réalisation complète de l'étude et de la conception mécanique d'une table élévatrice pour moteurs de véhicules.",
+      "Réalisation de l'analyse des besoins fonctionnels, des calculs de dimensionnement et de la sélection des matériaux.",
+      "Gestion de la modélisation CAO 3D, de la supervision de fabrication et des essais de validation des performances.",
     ],
   },
   {
-    title: "Technician Internship",
-    company: "SCCMBF — Hammam Sousse (1 month)",
+    title: "Stage Technicien",
+    company: "SCCMBF — Hammam Sousse (1 mois)",
     period: "01/2021 – 02/2021",
-    tags: "Mechanical Maintenance · Laser Cutting · Machining · Boilermaking",
+    tags: "Maintenance Mécanique · Découpe Laser · Usinage · Chaudronnerie",
     image: sccmbfLogo.url,
     bullets: [
-      "Technical diagnostics and corrective maintenance on lathes, milling machines, laser and wood cutters.",
-      "Manufactured custom mechanical components (transmission shafts, mechanical supports).",
-      "Participated in assembly and structural steel fabrication for truck trailers.",
+      "Diagnostic technique et maintenance corrective sur les tours, fraiseuses, découpeuses laser et à bois.",
+      "Fabrication de composants mécaniques sur mesure (arbres de transmission, supports mécaniques).",
+      "Participation à l'assemblage et à la fabrication de structures métalliques pour semi-remorques.",
     ],
   },
   {
-    title: "Worker Internship",
-    company: "Meublatex — Akouda, Sousse (1 month)",
+    title: "Stage Ouvrier",
+    company: "Meublatex — Akouda, Sousse (1 mois)",
     period: "01/2020 – 02/2020",
-    tags: "Production Machinery · Water Pumps · Preventive Maintenance",
+    tags: "Machines de Production · Pompes à Eau · Maintenance Préventive",
     image: meublatexLogo.url,
     bullets: [
-      "Fabricated basic mechanical parts and contributed to trailer construction.",
-      "Routine servicing and general maintenance on water pumps, milling machines and wood cutting equipment.",
+      "Fabrication de pièces mécaniques de base et contribution à la construction de semi-remorques.",
+      "Entretien courant et maintenance générale des pompes à eau, fraiseuses et équipements de découpe du bois.",
     ],
   },
 ];
 
 const skills = [
-  "SolidWorks", "AutoCAD", "Mastercam", "CNC Milling", "CAD/CAM",
-  "HVAC Design", "Hydraulic Sizing", "Aeraulic Sizing", "Piping Systems",
-  "Industrial Automation", "Pneumatics", "Servomotors", "BMS / BAMS",
-  "Thermal Regulation", "Mechanics of Materials", "Metallurgy",
-  "Project Management", "Technical Supervision", "Quality Control",
+  "SolidWorks", "AutoCAD", "Mastercam", "Fraisage CNC", "CAO/FAO",
+  "Conception CVC", "Dimensionnement Hydraulique", "Dimensionnement Aéraulique", "Réseaux de Tuyauterie",
+  "Automatisation Industrielle", "Pneumatique", "Servomoteurs", "BMS / BAMS",
+  "Régulation Thermique", "Résistance des Matériaux", "Métallurgie",
+  "Gestion de Projet", "Supervision Technique", "Contrôle Qualité",
 ];
 
-function Index() {
+function FrPage() {
   const { theme, toggle, mounted } = useTheme();
 
   return (
@@ -139,47 +139,47 @@ function Index() {
               "radial-gradient(circle at 20% 30%, oklch(1 0 0 / 0.15), transparent 40%), radial-gradient(circle at 80% 70%, oklch(1 0 0 / 0.1), transparent 40%)",
           }}
         />
-        <div className="absolute top-4 right-4 z-10">
-          <Link
-            to="/fr"
-            className="inline-flex items-center justify-center rounded-full bg-primary-foreground/20 px-4 py-2 text-sm font-medium text-foreground backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
-          >
-            FR
-          </Link>
-        </div>
         <div className="relative mx-auto max-w-5xl px-6 py-20 text-center" style={{ color: "var(--hero-foreground)" }}>
+          <div className="absolute top-4 right-4 z-10">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center rounded-full bg-primary-foreground/20 px-4 py-2 text-sm font-medium text-foreground backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
+            >
+              EN
+            </Link>
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Sami MEZRIGUI
           </h1>
           <p className="mt-4 text-lg md:text-xl opacity-90">
-            Electromechanical Engineer
+            Ingénieur Électromécanique
           </p>
           <nav className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm md:text-base">
-            <a href="#about" className="hover:opacity-75 transition">About</a>
-            <a href="#experience" className="hover:opacity-75 transition">Experience</a>
-            <a href="#projects" className="hover:opacity-75 transition">Projects</a>
-            <a href="#skills" className="hover:opacity-75 transition">Skills</a>
+            <a href="#about" className="hover:opacity-75 transition">À propos</a>
+            <a href="#experience" className="hover:opacity-75 transition">Expérience</a>
+            <a href="#projects" className="hover:opacity-75 transition">Projets</a>
+            <a href="#skills" className="hover:opacity-75 transition">Compétences</a>
             <a href="#contact" className="hover:opacity-75 transition">Contact</a>
           </nav>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <button
               onClick={toggle}
               className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground backdrop-blur transition hover:bg-primary-foreground/30 border border-primary-foreground/30"
-              aria-label="Toggle dark mode"
+              aria-label="Basculer le mode sombre"
             >
               {mounted && theme === "dark" ? (
                 <Sun className="h-4 w-4" />
               ) : (
                 <Moon className="h-4 w-4" />
               )}
-              {mounted && theme === "dark" ? "Light Mode" : "Dark Mode"}
+              {mounted && theme === "dark" ? "Mode Clair" : "Mode Sombre"}
             </button>
             <a
               href={cvAsset.url}
               download="Sami-Mezrigui-CV.pdf"
               className="inline-flex items-center gap-2 rounded-xl bg-primary-foreground/80 px-5 py-2.5 text-sm font-medium text-foreground transition hover:bg-primary-foreground"
             >
-              <FileDown className="h-4 w-4" /> Download CV
+              <FileDown className="h-4 w-4" /> Télécharger le CV
             </a>
           </div>
         </div>
@@ -188,7 +188,7 @@ function Index() {
       <main className="mx-auto max-w-5xl px-6 py-20 space-y-24">
         {/* About */}
         <section id="about" className="scroll-mt-20">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">About Me</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">À propos de moi</h2>
           <div className="grid gap-8 md:grid-cols-[240px_1fr] items-start">
             <div
               className="aspect-square rounded-2xl overflow-hidden bg-muted"
@@ -196,25 +196,25 @@ function Index() {
             >
               <img
                 src={profileAsset.url}
-                alt="Sami Mezrigui portrait"
+                alt="Portrait de Sami Mezrigui"
                 width={768}
                 height={768}
                 className="h-full w-full object-cover"
               />
             </div>
             <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
-              Dynamic Electromechanical Engineer with proven experience in designing
-              and optimizing innovative solutions. Passionate about leveraging
-              technology to improve efficiency and performance in complex systems —
-              from fluid networks and HVAC design to industrial automation and
-              mechanical CAD.
+              Ingénieur électromécanique dynamique avec une expérience avérée dans la conception
+              et l'optimisation de solutions innovantes. Passionné par l'exploitation de la
+              technologie pour améliorer l'efficacité et les performances des systèmes complexes —
+              des réseaux de fluides et de la conception CVC à l'automatisation industrielle et la
+              CAO mécanique.
             </p>
           </div>
         </section>
 
         {/* Experience */}
-        <section id="experience" className="scroll-mt-20">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Experience</h2>
+        <section id="experience" className="scroll-mt the scroll-mt-20">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Expérience</h2>
           <div className="space-y-6">
             {experiences.map((exp, i) => (
               <article
@@ -271,62 +271,62 @@ function Index() {
 
         {/* Projects */}
         <section id="projects" className="scroll-mt-20">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Projets</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <ProjectCard
               image={liftingTableAsset.url}
-              title="Lifting Table for Vehicle Engines"
-              tags={["SolidWorks", "CAD", "Mechanics of Materials"]}
-              description="Full mechanical study and design of a lifting table — sizing calculations, material selection, 3D CAD modeling and validation testing."
+              title="Table Élévatrice pour Moteurs de Véhicules"
+              tags={["SolidWorks", "CAO", "Résistance des Matériaux"]}
+              description="Étude et conception mécanique complète d'une table élévatrice — calculs de dimensionnement, sélection des matériaux, modélisation CAO 3D et essais de validation."
             />
             <ProjectCard
               image={kelatecImg}
               video={kelatecVideo.url}
-              title="Hydraulic Press & Automated Cutting Line"
-              tags={["SolidWorks", "Pneumatics", "Servomotors"]}
-              description="Special machinery design including a generic hydraulic press and an automated profile cutting line with rack-and-pinion motion and programmed control logic."
+              title="Presse Hydraulique et Ligne de Découpe Automatisée"
+              tags={["SolidWorks", "Pneumatique", "Servomoteurs"]}
+              description="Conception de machines spéciales incluant une presse hydraulique générique et une ligne de découpe de profilés automatisée avec mouvement par crémaillère et logique de commande programmée."
             />
             <ProjectCard
               image={trappePoster.url}
               video={trappeVideo.url}
-              title="Two-Position Hatch — Pneumatic Control"
-              tags={["SolidWorks", "Pneumatics", "Mechanical Design"]}
-              description="Design and 3D modeling of a two-position hatch actuated by pneumatic control — kinematic study, cylinder sizing and motion simulation of the opening/closing sequence."
+              title="Trappe à Deux Positions — Commande Pneumatique"
+              tags={["SolidWorks", "Pneumatique", "Conception Mécanique"]}
+              description="Conception et modélisation 3D d'une trappe à deux positions actionnée par commande pneumatique — étude cinématique, dimensionnement du vérin et simulation du mouvement de la séquence ouverture/fermeture."
             />
             <ProjectCard
               image={ecarteurPoster.url}
               video={ecarteurVideo.url}
-              title="Compact Pneumatic Spreader Module"
-              tags={["SolidWorks", "Pneumatics", "HMI", "Safety"]}
-              description="Design, sizing and fabrication of a compact, adjustable and safe pneumatic spreader module for a special industrial machine — full 3D assembly and kinematic simulation in SolidWorks, control cabinet with LCD HMI, push-buttons and rotary potentiometer, double-acting cylinder with FRL air treatment and solenoid valves, plus emergency-stop safety loops. Validated as a functional prototype with high precision and repeatability."
+              title="Module Écarteur Pneumatique Compact"
+              tags={["SolidWorks", "Pneumatique", "IHM", "Sécurité"]}
+              description="Conception, dimensionnement et fabrication d'un module écarteur pneumatique compact, réglable et sûr pour une machine industrielle spéciale — assemblage 3D complet et simulation cinématique dans SolidWorks, armoire de commande avec IHM LCD, boutons-poussoirs et potentiomètre rotatif, vérin double effet avec traitement d'air FRL et électrovannes, plus boucles de sécurité avec arrêt d'urgence. Validé en tant que prototype fonctionnel avec haute précision et répétabilité."
             />
             <ProjectCard
               image={pressePoster.url}
               video={presseVideo.url}
-              title="Precision Pressing Machine with Sliding Tray"
-              tags={["SolidWorks", "Pneumatics", "HMI", "Linear Guides", "FRL"]}
-              description="Design, sizing and fabrication of a compact precision pressing machine with a manual sliding tray for secure loading, twin-pillar press-head guidance, linear-rail tray guidance, integrated HMI and side-mounted FRL unit — validated as a functional prototype on the shop floor."
+              title="Machine de Pression de Précision avec Plateau Coulissant"
+              tags={["SolidWorks", "Pneumatique", "IHM", "Guidage Linéaire", "FRL"]}
+              description="Conception, dimensionnement et fabrication d'une machine de pression de précision compacte avec plateau coulissant manuel pour un chargement sécurisé, guidage de la tête de presse à double colonne, guidage du plateau sur rail linéaire, IHM intégrée et unité FRL latérale — validée en tant que prototype fonctionnel en atelier."
             />
             <ProjectCard
               image={posageAssembly.url}
               video={posageKinematic.url}
-              title="Custom PCB Fixture (Posage) for Generic Press"
-              tags={["SolidWorks", "Polymer Machining", "Precision Tooling", "PCB Assembly", "Kelatec Innovation"]}
-              description="Developed in collaboration with Kelatec Innovation — design of a custom fixture (posage) for an electronic PCB, integrated into a generic press. The main challenge was tight dimensional constraints: the yellow polymer matrix perfectly matches the complex and irregular geometry of the board's components (variable heights, connectors, coils) while ensuring rigid retention, ultra-precise alignment under the press and optimal protection of the PCB against mechanical stress during assembly."
+              title="Posage sur Mesure pour Carte Électronique (PCB) pour Presse Générique"
+              tags={["SolidWorks", "Usinage de Polymère", "Outil de Précision", "Assemblage PCB", "Kelatec Innovation"]}
+              description="Développé en collaboration avec Kelatec Innovation — conception d'un posage sur mesure pour une carte électronique (PCB), intégré dans une presse générique. Le principal défi résidait dans les fortes contraintes dimensionnelles : la matrice en polymère jaune épouse parfaitement la géométrie complexe et irrégulière des composants de la carte (hauteurs variables, connecteurs, bobinages) tout en garantissant un maintien rigide, un alignement ultra-précis sous la presse et une protection optimale du PCB contre les contraintes mécaniques lors de l'assemblage."
             />
             <ProjectCard
               image={petProject.url}
               secondaryImage={pet3dPrint.url}
-              title="PET Recycling & 3D Filament Extrusion Machine"
-              tags={["3D Printing", "Arduino", "C/C++", "PET Recycling", "Thermal Control", "Eco-design"]}
-              description="Eco-designed functional prototype that transforms discarded PET plastic bottles into high-quality filament for 3D printing — tackling plastic waste while producing an affordable feedstock for additive manufacturing. The mechanical structure was fully 3D-printed (drum, gears, brackets, extruder housing) and assembled on a wooden base with a NEMA 17 stepper (17HS4401) driving the winding spool, a V6 J-head aluminium heat block with a 24 V 40 W Reprap cartridge, a PT100 temperature probe and a DC 12 V cooling fan. An Arduino Uno paired with a CNC Shield V3 and custom C/C++ firmware handles high-precision thermal regulation of the heating block, smooth stepper control for a constant winding speed and a regular filament diameter, with a 1602 I²C LCD displaying the live extrusion temperature."
+              title="Machine de Recyclage PET et d'Extrusion de Filament 3D"
+              tags={["Impression 3D", "Arduino", "C/C++", "Recyclage PET", "Contrôle Thermique", "Éco-conception"]}
+              description="Prototype fonctionnel éco-conçu qui transforme des bouteilles plastiques PET usagées en filament de haute qualité pour l'impression 3D — luttant contre le gaspillage plastique tout en produisant une matière première abordable pour la fabrication additive. La structure mécanique a été entièrement imprimée en 3D (tambour, engrenages, supports, boîtier d'extrudeur) et assemblée sur une base en bois avec un moteur pas à pas NEMA 17 (17HS4401) entraînant la bobine d'enroulement, un bloc chauffant aluminium V6 J-head avec une cartouche Reprap 24 V 40 W, une sonde de température PT100 et un ventilateur de refroidissement DC 12 V. Un Arduino Uno associé à un CNC Shield V3 et un firmware C/C++ personnalisé assure la régulation thermique de haute précision du bloc chauffant, le contrôle fluide du moteur pas à pas pour une vitesse d'enroulement constante et un diamètre de filament régulier, avec un écran LCD 1602 I²C affichant la température d'extrusion en temps réel."
             />
           </div>
         </section>
 
         {/* Skills */}
         <section id="skills" className="scroll-mt-20">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Skills</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Compétences</h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((s) => (
               <span
@@ -371,7 +371,7 @@ function Index() {
             </div>
 
             <p className="text-lg md:text-xl">
-              Let's discuss your next engineering project.
+              Discutons de votre prochain projet d'ingénierie.
             </p>
             <div className="relative mt-6 flex flex-col gap-3 items-start">
               <a
@@ -401,7 +401,7 @@ function Index() {
       </main>
 
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Sami Mezrigui — Electromechanical Engineer
+        © {new Date().getFullYear()} Sami Mezrigui — Ingénieur Électromécanique
       </footer>
     </div>
   );
@@ -442,7 +442,7 @@ function ProjectCard({
           <div className="grid grid-cols-2 h-full w-full">
             <img
               src={image}
-              alt={`${title} — SolidWorks design`}
+              alt={`${title} — conception SolidWorks`}
               loading="lazy"
               width={1024}
               height={768}
@@ -450,7 +450,7 @@ function ProjectCard({
             />
             <img
               src={secondaryImage}
-              alt={`${title} — kinematic and process diagram`}
+              alt={`${title} — cinématique et schéma de procédé`}
               loading="lazy"
               width={1024}
               height={768}

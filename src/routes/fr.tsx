@@ -223,7 +223,7 @@ function FrPage() {
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
                 {exp.image ? (
-                  <div className `/div className="aspect-[4/3] rounded-xl overflow-hidden bg-muted">
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden bg-muted">
                     <img
                       src={exp.image}
                       alt={exp.title}

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import profileAsset from "@/assets/profile.jpg.asset.json";
 import sccmbfLogo from "@/assets/sccmbf-logo.jpg.asset.json";
 import hmisLogo from "@/assets/hmis-logo.png.asset.json";

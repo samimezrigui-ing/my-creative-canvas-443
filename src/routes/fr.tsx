@@ -6,7 +6,7 @@ import sonoclimLogo from "@/assets/sonoclim-logo.png.asset.json";
 import icarLogo from "@/assets/icar-logo.png.asset.json";
 import kiolexLogo from "@/assets/kiolex-logo.png.asset.json";
 import kelatecLogo from "@/assets/kelatec-logo.png.asset.json";
-import meublatexLogo from "@/assets/meublatex-logo.jpg.asset.json";
+import meublatexLogo from "@/assets/meublatex-logo.png.asset.json";
 import kelatecImg from "@/assets/exp-kelatec.jpg";
 import liftingTableAsset from "@/assets/lifting-table.png.asset.json";
 import kelatecVideo from "@/assets/kelatec-line-3d.mp4.asset.json";

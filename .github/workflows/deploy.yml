@@ -31,11 +31,11 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
+       uses: actions/setup-node@v4
+with:
+  node-version: 20
+  cache: npm # <-- C'EST CETTE LIGNE QUI SOUHÈTE UN FICHIER LOCK
+run: npm install
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

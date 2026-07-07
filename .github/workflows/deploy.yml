@@ -27,13 +27,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
       - name: Build project
-        run: npm run build -- --skipLibCheck
+        run: npx vite build --emptyOutDir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -5,9 +5,18 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/my-creative-canvas-443/', // <--- AJOUTEZ CETTE LIGNE EXACTEMENT ICI
+  base: mode === 'production' ? '/my-creative-canvas-443/' : '/',
   server: {
     host: "::",
     port: 8080,
   },
-  // ... le reste du fichier ne change pas
+  plugins: [
+    react(),
+    mode === 'development' && componentTagger(),
+  ].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));

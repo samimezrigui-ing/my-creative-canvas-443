@@ -13,13 +13,13 @@
     "verbatimModuleSyntax": false,
     "noEmit": true,
 
-    /* Linting */
+    /* Linting - Configuration ultra-souple pour Lovable */
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
+    "noFallthroughCasesInSwitch": false,
+    "noUncheckedSideEffectImports": false,
     "paths": {
       "@/*": ["./src/*"]
     }

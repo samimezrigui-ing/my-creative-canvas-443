@@ -19,5 +19,18 @@ export default defineConfig({
   nitro: false, // Disable Nitro to allow TanStack Start's native prerenderer to build to dist/
   vite: {
     base: process.env.NODE_ENV === "production" ? "/my-creative-canvas-443/" : "/",
+    plugins: [
+      {
+        name: "resolve-lovable-assets",
+        transform(code, id) {
+          if (id.includes(".asset.json")) {
+            return {
+              code: code.replace(/\/__l5e\//g, "https://c4712e98-696b-4f22-9408-36b3cada9617.lovableproject.com/__l5e/"),
+              map: null,
+            };
+          }
+        },
+      },
+    ],
   },
 });

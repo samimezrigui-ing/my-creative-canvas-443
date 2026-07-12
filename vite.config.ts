@@ -11,8 +11,11 @@ export default defineConfig({
   },
   nitro: {
     preset: "github_pages",
-  },
+    baseURL: "/my-creative-canvas-443/",
+  } as any,
   vite: {
-    base: process.env.NODE_ENV === "production" ? "/my-creative-canvas-443/" : "/",
+    build: {
+      ssr: "src/server.ts",
+    },
   },
 });

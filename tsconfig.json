@@ -16,6 +16,7 @@
     /* Linting - Configuration ultra-souple pour Lovable */
     "skipLibCheck": true,
     "strict": false,
+    "strictNullChecks": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": false,

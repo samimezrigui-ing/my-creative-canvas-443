@@ -1,22 +1,18 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react"; // <-- Corrigé ici (sans le -swc)
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/my-creative-canvas-443/' : '/',
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [
-    react(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+export default defineConfig({
+  tanstackStart: {
+    server: { entry: "server" },
+    // Enable static site generation (prerendering) to generate static files
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
     },
   },
-}));
+  nitro: {
+    preset: "github_pages",
+  },
+  vite: {
+    base: process.env.NODE_ENV === "production" ? "/my-creative-canvas-443/" : "/",
+  },
+});

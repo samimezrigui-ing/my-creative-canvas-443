@@ -9,13 +9,8 @@ export default defineConfig({
       crawlLinks: true,
     },
   },
-  nitro: {
-    preset: "github_pages",
-    baseURL: "/my-creative-canvas-443/",
-  } as any,
+  nitro: false, // Disable Nitro to allow TanStack Start's native prerenderer to build to dist/
   vite: {
-    build: {
-      ssr: "src/server.ts",
-    },
+    base: process.env.NODE_ENV === "production" ? "/my-creative-canvas-443/" : "/",
   },
 });

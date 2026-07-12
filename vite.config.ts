@@ -7,6 +7,13 @@ export default defineConfig({
     prerender: {
       enabled: true,
       crawlLinks: true,
+      filter: ({ path }) => {
+        // Exclude Lovable assets and static files from being crawled/prerendered
+        if (path.includes("/__l5e/") || /\.(pdf|png|jpg|jpeg|gif|mp4|webm|svg|ico)$/i.test(path)) {
+          return false;
+        }
+        return true;
+      },
     },
   },
   nitro: false, // Disable Nitro to allow TanStack Start's native prerenderer to build to dist/
